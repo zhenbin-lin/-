@@ -1,0 +1,73 @@
+.container {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(247, 247, 247, 1);
+}
+.common-div-promote {
+    height: 130px;
+    border-radius: 24px;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 8px 15px;
+}
+.features-list {
+/*    height: 80%;*/
+    columns: 2;
+}
+.common-div {
+    border-radius: 8px;
+    background-color: #fff;
+    height: 100px;
+}
+
+.font-65ST{
+    font-family: HWtext-65ST,HWtext;
+/*    font-weight: 600;*/
+    allow-scale: false;
+}.font-34{
+    font-size: 17px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.text-center {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.padding {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+.common-div-effect {
+    height: 100px;
+    border-radius: 24px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.text-value{
+    color: grey;
+    font-size: 20px;
+}
+.common-margin-bottom{
+    margin-bottom: 20px;
+}
+.common-body {
+    margin-top: 50px;
+    flex-direction: column;
+}
+.common-margin-right{
+    margin-right: 8px;
+}
+.common-margin-left{
+    margin-left: 8px;
+}

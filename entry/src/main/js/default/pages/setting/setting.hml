@@ -1,0 +1,64 @@
+
+<div class="container" >
+
+    <div class="common-body" >
+        <!--手势设置-->
+        <div  class="common-div paddings text-center"
+              style="align-items: center;margin-top: 5px; height: 8%;">
+            <text class="font-65ST font-20" style="font-weight: 600;font-size: 24px;padding-left: 2px;">
+                {{deviceInfo.title}}</text>
+        </div>
+
+
+        <div style="padding-top: 15px; height: 78%;">
+            <list class="features-list" longpress="addNewItem()" >
+                <list-item for="{{group in settings}}" style="margin-bottom: 5px;" if="{{$idx != 0}}">
+                    <div onclick="modify({{$idx}},{{GESTURE1}})"  class="common-div-effect common-margin-right"
+                         style="width: 25%; text-align: center; flex-direction: column;
+                                 justify-content: center;border-left-width: 0px;">
+                        <text class="font-20 text-center" style="align-content: center;
+                                text-align: center; height: 43px;justify-content: center;">{{group.pos1}}</text>
+                    </div>
+
+                    <div onclick="modify({{$idx}},{{GESTURE2}})" class="common-div-effect common-margin-right"
+                         style="width: 25%; text-align: center; flex-direction: column;
+                                 justify-content: center;border-left-width: 0px;">
+                        <text class="font-20 text-center" style="align-content: center;
+                                text-align: center; height: 43px;justify-content: center;">{{group.pos2}}</text>
+                    </div>
+
+                    <div onclick="modify({{$idx}},{{EFFECT}})" class="common-div-effect "
+                         style="width: 50%; text-align: center; flex-direction: column;
+                                 justify-content: center;border-left-width: 0px;">
+                        <text class="font-20 text-center" style="align-content: center;
+                                text-align: center; height: 43px;justify-content: center;">{{group.pos3}}</text>
+                    </div>
+                </list-item>
+            </list>
+
+            <dialog id="loginDialog">
+                <div class="loginDialog">
+                    <div class="tittle1">
+                        <text style="font-size: 26px;" >  手势/功能</text></div>
+                    <picker-view class="tittle2" type="text" range = "{{showing_select}}" selected="{{Selected}}"
+                                 @change="handleChange"></picker-view>
+
+
+                    <div style="align-content: center;" >
+                        <text onclick="textoncancel" style="color: dodgerblue; text-align: left; font-size:20px;
+                                margin-left: 26px;" >取消</text>
+                        <text style="weights: 500;align-content: center; margin-left: 62px; color: #8d9090;" >|</text>
+                        <text onclick="textonchange({{gesture}})" style="color: dodgerblue;text-align: right;font-size:20px;
+                                margin-left: 60px;margin-right: 5px;" >确定</text>
+                    </div></div>
+            </dialog>
+        </div>
+
+        <div class="common-margin-bottom text-center" style="margin-top: 10px;"  >
+            <button style="height:50px;width: 80%;align-content: center; radius: 16px;"
+                    onclick="addNewItem">添加新功能</button>
+        </div>
+
+
+    </div>
+</div>

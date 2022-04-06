@@ -1,0 +1,161 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=12060, tid=0x00000000000020e8
+#
+# JRE version:  (8.0_265-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.265-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002600678b800):  JavaThread "Unknown thread" [_thread_in_vm, id=8424, stack(0x000000c6f2f00000,0x000000c6f3000000)]
+
+Stack: [0x000000c6f2f00000,0x000000c6f3000000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000002600678b800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8424, stack(0x000000c6f2f00000,0x000000c6f3000000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000082600000, size: 2010 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 37888K, used 655K [0x00000000d6200000, 0x00000000d8c00000, 0x0000000100000000)
+  eden space 32768K, 2% used [0x00000000d6200000,0x00000000d62a3d80,0x00000000d8200000)
+  from space 5120K, 0% used [0x00000000d8700000,0x00000000d8700000,0x00000000d8c00000)
+  to   space 5120K, 0% used [0x00000000d8200000,0x00000000d8200000,0x00000000d8700000)
+ ParOldGen       total 86016K, used 0K [0x0000000082600000, 0x0000000087a00000, 0x00000000d6200000)
+  object space 86016K, 0% used [0x0000000082600000,0x0000000082600000,0x0000000087a00000)
+ Metaspace       used 780K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 76K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000026017780000,0x0000026017b70000] byte_map_base: 0x000002601736d000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000057b67790
+ Begin Bits: [0x0000026017e10000, 0x0000026019d78000)
+ End Bits:   [0x0000026019d78000, 0x000002601bce0000)
+
+Polling page: 0x0000026008390000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x00000260083c0000, 0x0000026008630000, 0x00000260173c0000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.018 loading class java/lang/Short
+Event: 0.018 loading class java/lang/Short done
+Event: 0.018 loading class java/lang/Integer
+Event: 0.018 loading class java/lang/Integer done
+Event: 0.018 loading class java/lang/Long
+Event: 0.018 loading class java/lang/Long done
+Event: 0.019 loading class java/lang/NullPointerException
+Event: 0.019 loading class java/lang/NullPointerException done
+Event: 0.019 loading class java/lang/ArithmeticException
+Event: 0.019 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff705e20000 - 0x00007ff705e5a000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\java.exe
+0x00007fffcc670000 - 0x00007fffcc865000 	C:\windows\SYSTEM32\ntdll.dll
+0x00007fffcbd60000 - 0x00007fffcbe1d000 	C:\windows\System32\KERNEL32.DLL
+0x00007fffca300000 - 0x00007fffca5c9000 	C:\windows\System32\KERNELBASE.dll
+0x00007fffca6d0000 - 0x00007fffca77c000 	C:\windows\System32\ADVAPI32.dll
+0x00007fffcbb60000 - 0x00007fffcbbfe000 	C:\windows\System32\msvcrt.dll
+0x00007fffcb650000 - 0x00007fffcb6eb000 	C:\windows\System32\sechost.dll
+0x00007fffcbc30000 - 0x00007fffcbd5a000 	C:\windows\System32\RPCRT4.dll
+0x00007fffca860000 - 0x00007fffcaa00000 	C:\windows\System32\USER32.dll
+0x00007fffca2d0000 - 0x00007fffca2f2000 	C:\windows\System32\win32u.dll
+0x00007fffcbc00000 - 0x00007fffcbc2a000 	C:\windows\System32\GDI32.dll
+0x00007fffca060000 - 0x00007fffca16b000 	C:\windows\System32\gdi32full.dll
+0x00007fffc9fc0000 - 0x00007fffca05d000 	C:\windows\System32\msvcp_win.dll
+0x00007fffca5d0000 - 0x00007fffca6d0000 	C:\windows\System32\ucrtbase.dll
+0x00007fffab840000 - 0x00007fffabada000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007fffcbb30000 - 0x00007fffcbb60000 	C:\windows\System32\IMM32.DLL
+0x00007fffa4800000 - 0x00007fffa48ef000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\msvcr120.dll
+0x00007fffa57e0000 - 0x00007fffa5886000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\msvcp120.dll
+0x0000000057380000 - 0x0000000057be6000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\server\jvm.dll
+0x00007fffcad50000 - 0x00007fffcad58000 	C:\windows\System32\PSAPI.DLL
+0x00007fffaa690000 - 0x00007fffaa699000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x00007fffcc5c0000 - 0x00007fffcc62b000 	C:\windows\System32\WS2_32.dll
+0x00007fffc71c0000 - 0x00007fffc71ca000 	C:\windows\SYSTEM32\VERSION.dll
+0x00007fffb4190000 - 0x00007fffb41b7000 	C:\windows\SYSTEM32\WINMM.dll
+0x00007fffc6510000 - 0x00007fffc651f000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\verify.dll
+0x00007fffaa130000 - 0x00007fffaa158000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\java.dll
+0x00007fffc49b0000 - 0x00007fffc49c6000 	D:\DevEco\DevEco Studio 2.2.0.200\tools\openjdk\jre\bin\zip.dll
+
+VM Arguments:
+java_command: E:\HarmonyOS-SDK\toolchains\lib\hmos_app_packing_tool.jar --mode hap --assets-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\res\debug\rich\assets --force true --dex-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\transformClasses\debug\dalvik\classes.dex --lib-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\libs --file-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\jarRes\debug --json-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\res\debug\rich\config.json --resources-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\res\debug\rich\resources --index-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\res\debug\rich\resources.index --out-path G:\xjxxxjjjkkkyyyyttt\entry\build\outputs\hap\debug\entry-debug-rich-unsigned.hap --shell-apk-path G:\xjxxxjjjkkkyyyyttt\entry\build\intermediates\shell_output\debug\entry_debug_signed_entry.apk --pack-info-path G:\xjxxxjjjkkkyyyyttt\entry\build\outputs\hap\debug\pack.info
+java_class_path (initial): E:\HarmonyOS-SDK\toolchains\lib\hmos_app_packing_tool.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\JAVA\Java8\Java
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;d:\ispexpert\ispcomp\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\ÏòÈÕ¿û;D:\x86_664 gcc\mingw64\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;D:\gvim;D:\JAVA\Java8\Java\bin;D:\JAVA\Tomcat\apache-tomcat-8.5.64-windows-x64\apache-tomcat-8.5.64\bin;D:\JAVA\Tomcat\apache-tomcat-8.5.64-windows-x64\apache-tomcat-8.5.64\lib;D:\DOSBox\DOSBox-0.74-3;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;%Python3.7.6%;%HUAWEI-LiteOS-Studio%;D:\Git\cmd;D:\wget\GnuWin32\bin;D:\x86_64 gcc\gcc\mingw64\mingw64\bin;D:\x86_64 gcc\gcc\mingw64\mingw64\msys\bin;;%RUYI_PYTHON_PATH%;D:\FFMPEG\bin;D:\Node.js\;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37\Scripts;D:\python\Scripts\;D:\python\;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37;C:\Users\Bin_Watson\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Bin_Watson\AppData\Local\Microsoft\WindowsApps;D:\Bandizip\;C:\Users\Bin_Watson\AppData\Local\Programs\Microsoft VS Code\bin;G:\VScode\Microsoft VS Code\bin;D:\intellji java\IntelliJ IDEA 2019.3.3\bin;;C:\Program Files\Azure Data Studio\bin;;D:\DevEco\DevEco Studio 2.2.0.200\bin;;C:\Users\Bin_Watson\AppData\Roaming\npm
+USERNAME=Bin_Watson
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 11, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1151)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 11, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8230708k(570264k free), swap 18716464k(5236k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.265-b01) for windows-amd64 JRE (1.8.0_265-b01), built on Jul 28 2020 15:11:27 by "jenkins" with MS VC++ 12.0 (VS2013)
+
+time: Wed Sep 01 16:07:42 2021
+timezone: ?D1¨²¡À¨º¡Á?¨º¡À??
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

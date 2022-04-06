@@ -1,0 +1,58 @@
+<div class="container" >
+
+    <div class="common-body">
+    <!--不在线-->
+        <div class="common-div paddings text-center" 
+             style="align-items: center;
+                     margin-top: 10px;
+                     height: 10%;">
+            <text class="font-65ST font-34" style="font-weight: 600;font-size: 24px;padding-left: 2px;">{{deviceInfo.title}}</text>
+        </div>
+
+
+
+        <div style="padding-top: 15px;">
+            <list class="features-list">
+                <list-item style="column-span: 2;">
+                    <div class="text-center common-margin-bottom">
+                        <text class="text-value">静态手势</text>
+                    </div>
+                </list-item>
+                <list-item type="promote" for="{{static_gesture}}">
+                    <div  class="common-div-effect {{$idx%2===0?'common-margin-right':'common-margin-left'}}"
+                          style="height: 12%;justify-content: space-between">
+                        <div style="flex-direction: column; 
+                                margin-left: 10px; 
+                                justify-content: center;">
+                            <text class="font-16 text-center" 
+                                  style="text-align: left; 
+                                          margin-left: 5%;
+                                          height: 43px;">{{$item.name}}</text>
+                        </div>
+                        <div class="text-center" style="margin-right: 10%;">
+                            <image  style="object-fit: contain; width: 48px; height: 48px;" src="{{$item.icon}}"></image>
+                        </div>
+                    </div>
+                </list-item>
+                <list-item></list-item>
+
+<!--                <list-item style="column-span: 2;">-->
+<!--                    <div class="text-center common-margin-bottom">-->
+<!--                        <text class="text-value">动态手势</text>-->
+<!--                    </div>-->
+<!--                </list-item>-->
+<!--                <list-item type="promote" for="{{dynamic_gesture}}">-->
+<!--                    <div  class="common-div-effect {{$idx%2===0?'common-margin-right':'common-margin-left'}}" style="height: 130px;justify-content: space-between">-->
+<!--                        <div style="flex-direction: column; margin-left: 10px; justify-content: center;">-->
+<!--                            <text class="font-32 text-center" style="text-align: left; height: 43px;">{{$item.name}}</text>-->
+<!--                        </div>-->
+<!--                        <div class="text-center" style="margin-right: 5px;">-->
+<!--                            <image  style="object-fit: contain; width: 48px; height: 48px;" src="{{$item.icon}}"></image>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </list-item>-->
+            </list>
+        </div>
+
+    </div>
+</div>

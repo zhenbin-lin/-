@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include ':entry', ':videoplaydemo'
+=======
+include ':entry', ':videoplaydemo'
+>>>>>>> remotes/origin/main

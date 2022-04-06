@@ -1,0 +1,11 @@
+<div class="container" style="position: fixed;top: 0px;left: 0px;">
+    <div style="justify-content: space-between; padding-top: 20px;padding-bottom: 20px;">
+        <div style="justify-content: center;flex-direction:row;">
+            <image onclick="backImageClick" src="{{backSrc_value}}" class="action-img" if="hasHeader"></image>
+            <text style="padding-left: 20px; color: #000000; font-size: 48px;">{{header}}</text>
+        </div>
+        <div class="more-div" onclick='toSettingPage'>
+            <image if="{{hasMoreIcon}}" id="menu_icon" src="{{moreSrc_value}}" class="action-more-img"></image>
+        </div>
+    </div>
+</div>

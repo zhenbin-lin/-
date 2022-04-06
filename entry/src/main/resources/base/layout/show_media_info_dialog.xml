@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:slice_tracks_root"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical"
+    ohos:padding="20vp">
+
+    <!--Player-->
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:player_title"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_start="true"
+            ohos:align_parent_top="true"
+            ohos:text="Player"
+            ohos:text_size="15fp"/>
+
+        <Text
+            ohos:id="$+id:player"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:player_title"
+            ohos:text="Player"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:player_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:player_title"
+            ohos:right_of="$+id:player"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+    </DependentLayout>
+
+    <!--Media-->
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:medai_title"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_start="true"
+            ohos:align_parent_top="true"
+            ohos:text="Media"
+            ohos:text_size="15fp"/>
+        <!--Resolution-->
+        <Text
+            ohos:id="$+id:resolution"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:medai_title"
+            ohos:text="Resolution"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:resolution_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:medai_title"
+            ohos:right_of="$+id:resolution"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+        <!--Length-->
+        <Text
+            ohos:id="$+id:length"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:resolution"
+            ohos:text="Length"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:length_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:resolution_value"
+            ohos:right_of="$+id:length"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+    </DependentLayout>
+
+
+    <!--Stream #0-->
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:stream_0_title"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_start="true"
+            ohos:align_parent_top="true"
+            ohos:text="Stream #0"
+            ohos:text_size="15fp"/>
+        <!--type-->
+        <Text
+            ohos:id="$+id:type"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:stream_0_title"
+            ohos:text="type"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:type_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:stream_0_title"
+            ohos:right_of="$+id:type"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+        <!--Language-->
+        <Text
+            ohos:id="$+id:language"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:type"
+            ohos:text="Language"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:language_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:type_value"
+            ohos:right_of="$+id:language"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+    </DependentLayout>
+
+
+    <!--Stream #1-->
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:stream_1_title"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_start="true"
+            ohos:align_parent_top="true"
+            ohos:text="Stream #1 *"
+            ohos:text_size="15fp"/>
+        <!--type-->
+        <Text
+            ohos:id="$+id:type1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:stream_1_title"
+            ohos:text="type"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:type1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:stream_1_title"
+            ohos:right_of="$+id:type1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+        <!--Language-->
+        <Text
+            ohos:id="$+id:language1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:type1"
+            ohos:text="Language"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:language1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:type1_value"
+            ohos:right_of="$+id:language1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+
+        <!--Codec-->
+        <Text
+            ohos:id="$+id:codec1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:language1"
+            ohos:text="Codec"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:codec1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:language1_value"
+            ohos:right_of="$+id:codec1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+
+        <!--Profile level-->
+        <Text
+            ohos:id="$+id:profile_level_1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:codec1"
+            ohos:text="Profile level"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:profile_level_1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:codec1_value"
+            ohos:right_of="$+id:profile_level_1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Pixel format-->
+        <Text
+            ohos:id="$+id:pixel_format_1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:profile_level_1"
+            ohos:text="Pixel format"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:pixel_format_1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:profile_level_1_value"
+            ohos:right_of="$+id:pixel_format_1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Resolution-->
+        <Text
+            ohos:id="$+id:resolution_1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:pixel_format_1"
+            ohos:text="Resolution"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:resolution_1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:pixel_format_1_value"
+            ohos:right_of="$+id:resolution_1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Frame rate-->
+        <Text
+            ohos:id="$+id:frame_rate_1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:resolution_1"
+            ohos:text="Frame rate"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:frame_rate_1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:resolution_1_value"
+            ohos:right_of="$+id:frame_rate_1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Bit rate-->
+        <Text
+            ohos:id="$+id:bit_rate_1"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:frame_rate_1"
+            ohos:text="Bit rate"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:bit_rate_1_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:frame_rate_1_value"
+            ohos:right_of="$+id:bit_rate_1"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+    </DependentLayout>
+
+
+    <!--Stream #2-->
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:stream_2_title"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_start="true"
+            ohos:align_parent_top="true"
+            ohos:text="Stream #2 *"
+            ohos:text_size="15fp"/>
+        <!--type-->
+        <Text
+            ohos:id="$+id:type2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:stream_2_title"
+            ohos:text="type"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:type2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:stream_2_title"
+            ohos:right_of="$+id:type2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+        <!--Language-->
+        <Text
+            ohos:id="$+id:language2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:type2"
+            ohos:text="Language"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:language2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:type2_value"
+            ohos:right_of="$+id:language2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+
+        <!--Codec-->
+        <Text
+            ohos:id="$+id:codec2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:language2"
+            ohos:text="Codec"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:codec2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:language2_value"
+            ohos:right_of="$+id:codec2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+
+        <!--Profile level-->
+        <Text
+            ohos:id="$+id:profile_level_2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:codec2"
+            ohos:text="Profile level"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:profile_level_2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:codec2_value"
+            ohos:right_of="$+id:profile_level_2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Pixel format-->
+        <Text
+            ohos:id="$+id:pixel_format_2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:profile_level_2"
+            ohos:text="Pixel format"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:pixel_format_2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:profile_level_2_value"
+            ohos:right_of="$+id:pixel_format_2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Resolution-->
+        <Text
+            ohos:id="$+id:resolution_2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:pixel_format_2"
+            ohos:text="Resolution"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:resolution_2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:pixel_format_2_value"
+            ohos:right_of="$+id:resolution_2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Frame rate-->
+        <Text
+            ohos:id="$+id:frame_rate_2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:resolution_2"
+            ohos:text="Frame rate"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:frame_rate_2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:resolution_2_value"
+            ohos:right_of="$+id:frame_rate_2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+
+        <!--Bit rate-->
+        <Text
+            ohos:id="$+id:bit_rate_2"
+            ohos:height="match_content"
+            ohos:width="55vp"
+            ohos:below="$+id:frame_rate_2"
+            ohos:text="Bit rate"
+            ohos:text_size="10fp"/>
+
+        <Text
+            ohos:id="$+id:bit_rate_2_value"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:below="$+id:frame_rate_2_value"
+            ohos:right_of="$+id:bit_rate_2"
+            ohos:start_margin="50vp"
+            ohos:text="N/A"
+            ohos:text_size="10fp"/>
+    </DependentLayout>
+
+
+</DirectionalLayout>

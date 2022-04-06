@@ -1,0 +1,80 @@
+<div id="container" class="container">
+    <div style="position: fixed;
+            flex-direction: column;
+            top: 0px;
+            left: 0px;" >
+        <tabs ref="table" index="0"  vertical="false" onclick="changeTabs" id="table" >
+            <tab-content class="content"
+                         style="width: {{tabsWidth}}; height: {{tabsHeight}}" >
+<!--                <div >-->
+<!--                    <video class="video"-->
+<!--                           src="{{videoSrc}}"-->
+<!--                           autoplay="true">-->
+<!--                    </video>-->
+<!--                </div>-->
+                <div>
+                    <canvas ref="canvas1"
+                            style="background-size:contain;
+                                    height: 100%;
+                                    width: 100%;
+                                    background-repeat:no-repeat;">
+                    </canvas>
+                </div>
+            </tab-content>
+            <tab-bar>
+<!--                <text id="onlineDisplay" class="tab_bar_text" >直播</text>-->
+                <text id="sceneDisplay" class="tab_bar_text">识别场景</text>
+            </tab-bar>
+        </tabs>
+        <text style="font-size: 12px;
+                background-color: {{color}};
+                color: whitesmoke;
+                text-align: center;
+                padding-bottom: 2px;
+                padding-top: 2px;" >{{context}}</text>
+
+        <list class="feature-list"  >
+            <list-item for="{{gestureGrp in gestures}}"
+                       style="margin-bottom: 5px;
+                               width: 100%;
+                               height: 48px;
+                               ">
+                <div onclick="handleClick({{$idx}})"
+                     class="message-item"
+                     style="width: 100%; flex-direction: column;
+                             margin-left: 2%;
+                             margin-top: 10px;">
+                    <div  for="{{items in gestureGrp.gesture}}">
+                        <text class="font-18 text-left font-65ST"
+                              style="width: 98%; margin-bottom: 2px;opacity: 0.9;">
+                            {{items.name}}</text>
+                    </div>
+
+                    <text class="font-8 common-foot-color font-65ST"
+                          style="width: 90%;" >
+                        {{gestureGrp.time}}</text>
+                    <div class="horizontal-dividing-line"></div>
+                </div>
+
+            </list-item>
+        </list>
+    </div>
+<!--    <div style="text-align: center; align-content: center;"  >-->
+
+<!--    </div>-->
+    <div class="bottom"  >
+        <div class="bottom_item" onclick="videoOnline" >
+            <image class="img" src="{{img_video}}"></image>
+            <text class="bottom_text" >实时查看</text>
+        </div>
+        <div class="bottom_item" onclick="changeToPoses" >
+            <image class="img" src="{{img_poses}}"></image>
+            <text class="bottom_text" >可识别手势</text>
+        </div>
+        <div class="bottom_item" onclick="changeToSetting" >
+            <image class="img" src="{{img_setting}}"></image>
+            <text class="bottom_text" >设置</text>
+        </div>
+
+    </div>
+</div>

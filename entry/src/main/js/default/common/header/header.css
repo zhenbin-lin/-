@@ -1,0 +1,44 @@
+.container {
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.action-img {
+    width: 48px;
+    height: 48px;
+    padding-top: 15px;
+}
+.more-div {
+    width: 100px;
+    height: 50px;
+    justify-content: flex-end;
+}
+.action-more-img {
+    width: 50px;
+    height: 50px;
+}
+
+.device-img-top {
+    padding-top: 50px;
+}
+
+.device-img {
+    width: 266px;
+    height: 410px;
+}
+
+.logo-top {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.logo-img {
+    width: 115px;
+    height: 40px;
+}
+
+
+

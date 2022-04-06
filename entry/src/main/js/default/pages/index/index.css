@@ -1,0 +1,101 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.separator{*/
+/*    height: 50px;*/
+/*}*/
+
+.video{
+    width: 800px;
+    height: 480px;
+}
+
+tabs{
+    height: 258px;
+}
+
+tab-bar{
+    height: 40px;
+    margin-top: 20px;
+}
+
+.tab_bar_text{
+    font-size: 18;
+    width: 90px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.tab_bar_text:active{
+    color: #FF007DFF;
+}
+
+.content{
+    height: 200px;
+}
+
+.feature-list {
+    columns: 1;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.bottom{
+    width: 100%;
+    padding-top: 10px;
+    position: fixed;
+    height: 60px;
+    bottom: 0px;
+}
+
+.bottom_item{
+    height: 56px;
+    width: 280px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom_item:active{
+    background-color: #09000000;
+}
+
+.img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.bottom_text{
+    font-size: 14;
+}
+
+.horizontal-dividing-line {
+    margin-top: 3px;
+    height: 0.5px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*字体设置*/
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-65ST{
+    font-family: HWtext-65ST,HWtext;
+/*    font-weight: 600;*/
+    allow-scale: false;
+}
+
+.font-8{
+    font-size: 8px;
+}
+
